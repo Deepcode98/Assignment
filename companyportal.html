@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Company Portal</title>
+        <style>
+            .main{
+                text-align: center;
+            }
+            .formheading{
+                text-align: center;
+                font-size: 20px;
+            }
+            .employeform{
+    background-color: #e9f5ff;
+    border: 1px solid #b3d9ff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.form-group{
+    padding: 5px;
+
+}
+.form-group label{
+font-size: 18px;
+padding-bottom: 10px;
+font-weight: 800;
+margin-left: 10px;
+}
+.form-group input{
+        width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+
+}
+.form-group select{
+        width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+margin-top: 6px;
+}
+.registerationbutton{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top:6px
+}
+.registerationbutton:hover{
+    background-color: #0056b3;
+}
+.employeelist{
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+.employeelist h1{
+    text-align: center;
+}
+.employeelist li{
+font-size: 16px;
+    padding: 10px;
+    border-bottom: 1px solid #090808;
+margin-left:20px
+}
+.employeetable{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.employeetable h1{
+    text-align: center;
+}
+th{
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+
+}
+td{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #080808
+}
+img{
+    border-radius: 50%;
+}
+        </style>
+    </head>
+    <body style="background-color: #ccccccac;">
+<h1 class="main">Company Directory Portal</h1>
+<div class="employeform">
+    <h2 class="formheading">Employee Registration Form</h2>
+    <form id="employeeForm">
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required="">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="">
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <select id="department" name="department" required="">
+                <option value="IT">IT</option>
+                <option value="HR">HR</option>
+                <option value="Finance">Finance</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="employeeId">Employee ID:</label>
+            <input type="number" id="employeeId" name="employeeId" required="">
+        </div>
+
+        <div class="form-group">
+            <label for="profilePic">Profile Picture URL:</label>
+            <input type="url" id="profilePic" name="profilePic" required="">
+        </div>
+
+        <button type="submit" class="registerationbutton">Register Employee</button>
+    </form>
+    </div>
+    <div class="employeelist">
+        <h1>Employee List</h1>
+        <ol>
+            <li>
+                <a href="">John Doe - john@example.com</a>
+            </li>
+
+            <li>
+                <a href="">Jane Smith - jane@example.com</a>
+            </li>
+        </ol>
+    </div>
+    <div class="employeetable">
+        <h1>Employee Details</h1>
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Department</th>
+                    <th>Profile Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>12345</td>
+                    <td>IT</td>
+                    <td><img src="https://via.placeholder.com/50" alt="John's Profile"></td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>67890</td>
+                    <td>HR</td>
+                    <td><img src="https://via.placeholder.com/50" alt="Jane's Profile"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29331.764317871344!2d77.4373376!3d23.2259584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4260e2cbbbc9%3A0x62df0cdb10315556!2sShaurya%20Smarak%20Bhopal!5e0!3m2!1sen!2sin!4v1727353089826!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </body>
+</html>
